@@ -18,16 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\VS Code\Workshop\Miun\DT191G-Webbutveckling med .NET\DT191G-Moment2\gunpla
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/VS Code/Workshop/Miun/DT191G-Webbutveckling med .NET/DT191G-Moment2/gunpla/Views/Home/About.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/VS Code/Workshop/Miun/DT191G-Webbutveckling med .NET/DT191G-Moment2/gunpla/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/VS Code/Workshop/Miun/DT191G-Webbutveckling med .NET/DT191G-Moment2/gunpla/Views/Home/Product.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS Code/Workshop/Miun/DT191G-Webbutveckling med .NET/DT191G-Moment2/gunpla/Views/Home/Wishlist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXaXNobGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/VS Code/Workshop/Miun/DT191G-Webbutveckling med .NET/DT191G-Moment2/gunpla/Views/Shared/_Layout.cshtml]

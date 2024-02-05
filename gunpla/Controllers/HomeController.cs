@@ -4,29 +4,36 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace gunpla.Controllers;
 
-public class HomeController : Controller 
+public class HomeController : Controller
 {
-    public IActionResult Index() {
+    public IActionResult Index()
+    {
         return View();
     }
 
     [Route("/produkt")]
-    public IActionResult Product() {
+    public IActionResult Product()
+    {
+        string guide = "Klicka på produkter för att läsa mer";
+        ViewBag.guide = guide;
         return View();
     }
 
     [Route("/produkt")]
     [HttpPost]
-    public IActionResult Product(GunplaModel model) {
+    public IActionResult Product(GunplaModel model)
+    {
         // Validate input
-        if(ModelState.IsValid){
+        if (ModelState.IsValid)
+        {
             string jsonStr = System.IO.File.ReadAllText("gunpla.json");
 
             // Deserialize JSON
             var gunpla = JsonSerializer.Deserialize<List<GunplaModel>>(jsonStr);
 
             // Lägg till ny gunpla model
-            if(gunpla != null) {
+            if (gunpla != null)
+            {
                 gunpla.Add(model);
 
                 // Serialize JSON
@@ -39,12 +46,19 @@ public class HomeController : Controller
             // Rensa input form
             ModelState.Clear();
 
+            return RedirectToAction("Index", "Wishlist");
         }
         return View();
     }
 
-    [Route("/omoss")]
-    public IActionResult About() {
-        return View();
+    [Route("/wishlist")]
+    public IActionResult Wishlist()
+    {
+
+        string jsonStr = System.IO.File.ReadAllText("gunpla.json");
+
+        // Deserialize JSON
+        var gunpla = JsonSerializer.Deserialize<List<GunplaModel>>(jsonStr);
+        return View(gunpla);
     }
 }

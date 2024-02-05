@@ -1,11 +1,76 @@
 @model gunpla.Models.GunplaModel;
+
 @{
     ViewData["title"] = "Produkter";
 }
 
-<h2>Gunpla</h2>
+<div class="title small">
+    <h1>@ViewBag.guide</h1>
+</div>
 
-<p>Här kan man lägga nya model:</p>
+<div class="products">
+    <section class="product">
+        <picture class="formaticon hg">
+            <source srcset="img/format-hg.webp" type="image/webp">
+            <img src="img/format-hg.jpg" alt="Ikonen till format-high grade">
+        </picture>
+
+        <div class="product-img">
+            <a href="product1.html" title="länk till denna produkt">
+                <picture>
+                    <source srcset="img/jupitive.webp" type="image/webp">
+                    <img src="img/jupitive.jpg" alt="Bild om gundam Juptiive">
+                </picture>
+            </a>
+        </div>
+
+        <a href="product1.html">
+            <h2>JUPITIVE GUNDAM</h2>
+        </a>
+    </section>
+
+    <section class="product">
+        <picture class="formaticon rg">
+            <source srcset="img/format-rg.webp" type="image/webp">
+            <img src="img/format-rg.jpg" alt="Ikonen till format-real grade">
+        </picture>
+
+        <div class="product-img">
+            <a href="product2.html" title="länk till denna produkt">
+                <picture>
+                    <source srcset="img/crossbone.webp" type="image/webp">
+                    <img src="img/crossbone.jpg" alt="Bild om gundam Crossbone">
+                </picture>
+            </a>
+        </div>
+
+        <a href="product2.html">
+            <h2>CORSSBONE GUNDAM</h2>
+        </a>
+    </section>
+
+    <section class="product">
+        <picture class="formaticon eg">
+            <source srcset="img/format-eg.webp" type="image/webp">
+            <img src="img/format-eg.jpg" alt="Ikonen till format-entry grade">
+        </picture>
+
+        <div class="product-img">
+            <a href="product3.html" title="länk till denna produkt">
+                <picture>
+                    <source srcset="img/strike.webp" type="image/webp">
+                    <img src="img/strike.jpg" alt="Bild om gundam Strike">
+                </picture>
+            </a>
+        </div>
+
+        <a href="product3.html">
+            <h2>CORSSBONE GUNDAM</h2>
+        </a>
+    </section>
+</div>
+
+<h2>Här kan man lägga model till wishlist:</h2>
 
 <form method="post">
     <div asp-validation-summary="ModelOnly"></div>
@@ -18,12 +83,36 @@
     <span asp-validation-for="Name"></span>
     <br>
     <label asp-for="Type"></label>
-    <input asp-for="Type" type="text">
+    <select asp-for="Type" class="form-control">
+        <option value="">Choose Type</option>
+        <option value="HG">High Grade</option>
+        <option value="RG">Real Grade</option>
+        <option value="EG">Entry Grade</option>
+    </select>
     <span asp-validation-for="Type"></span>
     <br>
     <label asp-for="Serie"></label>
     <input asp-for="Serie" type="text">
     <span asp-validation-for="Serie"></span>
+    <br>
+    <label asp-for="Tools"></label>
+    <div>
+        <input type="checkbox" name="Tools" value="Knife" />
+        <label>Modeling Knife</label><br>
+        <input type="checkbox" name="Tools" value="Glue" />
+        <label>Glue</label><br>
+        <input type="checkbox" name="Tools" value="Sandpaper" />
+        <label>Sandpaper</label><br>
+        <input type="checkbox" name="Tools" value="Brush" />
+        <label>Modeling Brush</label><br>
+        <input type="checkbox" name="Tools" value="Pliers" />
+        <label>Pliers</label><br>
+    </div>
+    <span asp-validation-for="Tools"></span>
+    <br>
+    <label asp-for="IsGift"></label>
+    <input asp-for="IsGift" type="checkbox">
+    <span asp-validation-for="IsGift"></span>
     <br>
     <input type="submit" value="Lägg till model">
 </form>
