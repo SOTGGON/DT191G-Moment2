@@ -1,3 +1,29 @@
+@model gunpla.Models.GunplaModel;
 @{
     ViewData["title"] = "Produkter";
 }
+
+<h2>Gunpla</h2>
+
+<p>Här kan man lägga nya model:</p>
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly"></div>
+    <label asp-for="Code"></label>
+    <input asp-for="Code" type="text">
+    <span asp-validation-for="Code"></span>
+    <br>
+    <label asp-for="Name"></label>
+    <input asp-for="Name" type="text">
+    <span asp-validation-for="Name"></span>
+    <br>
+    <label asp-for="Type"></label>
+    <input asp-for="Type" type="text">
+    <span asp-validation-for="Type"></span>
+    <br>
+    <label asp-for="Serie"></label>
+    <input asp-for="Serie" type="text">
+    <span asp-validation-for="Serie"></span>
+    <br>
+    <input type="submit" value="Lägg till model">
+</form>
