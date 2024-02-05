@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+
+    <script src="https://kit.fontawesome.com/1aab4529d7.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="~/img/favicon.ico">
+    <title>GunKit | @ViewData["title"]</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="~/img/logo.svg" alt="Logotyp för GunKit"></a></div>
+
+        <div class="navigation">
+            <button class="btn open">
+                <span class="fa-solid fa-bars"></span>
+            </button>
+
+            <button class="btn close">
+                <span class="fa-solid fa-xmark"></span>
+            </button>
+
+            <nav>
+                <ul>
+                    <li><a asp-controller="Home" asp-action="Index">STARTSIDA</a></li>
+                    <li><a asp-controller="Home" asp-action="Product">PRODUKTER</a></li>
+                    <li><a asp-controller="Home" asp-action="About">OM OSS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero-image">
+        <picture>
+            <source media="(min-width:1521px)" type="image/jpg" srcset="~/img/background-big.webp">
+            <source media="(min-width:1521px)" type="image/jpg" srcset="~/img/background-big.jpg">
+            <source media="(min-width: 801px) and (max-width: 1520px)" type="image/jpg"
+                srcset="~/img/background-medium.webp">
+            <source media="(min-width: 801px) and (max-width: 1520px)" type="image/jpg"
+                srcset="~/img/background-medium.jpg">
+            <source media="(max-width:800px)" type="image/jpg" srcset="~/img/background-small.webp">
+            <source media="(max-width:800px)" type="image/jpg" srcset="~/img/background-small.jpg">
+            <img src="~/img/background-big.jpg" alt="en bild som vissa massa Gunpla lådor">
+        </picture>
+    </div>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-part" id="kontakt">
+                <h3>KONTAK OSS</h3>
+                <p><span class="fa-sharp fa-solid fa-phone"></span> Tel: <a href="tel:+4733378901">+47 333 78 901</a>
+                </p>
+                <br>
+                <p><span class="fa-solid fa-envelope"></span> E-Mail: <a
+                        href="mailto:gunkit@gunpla.se">gunkit@gunpla.se</a>.</p>
+            </div>
+
+            <div class="footer-part" id="follow">
+                <h3>FÖLJ OSS</h3>
+                <div class="display-row">
+                    <p><a href="#"><span class="fa-brands fa-facebook"></span> Facebook</a></p>
+                    <p><a href="#"><span class="fa-brands fa-instagram"></span> Instagram</a></p>
+                </div>
+                <div class="display-row">
+                    <p><a href="#"><span class="fa-brands fa-twitter"></span> Twitter</a></p>
+                    <p><a href="#"><span class="fa-brands fa-youtube"></span> Youtube</a></p>
+                </div>
+            </div>
+
+            <div class="footer-part">
+                <h3>ADDRESS</h3>
+                <p>Storgatan 12A</p>
+                <p>123 98</p>
+                <p>Stockholm</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Ⓒ Copyright Xiehui Mao, 2023.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="~/js/main.js"></script>
+</body>
+
+</html>

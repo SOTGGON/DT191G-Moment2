@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+:root {
+    --color-white-100: #F0F0F0;
+    --color-gray-100: #D9D9D9;
+    --color-gray-200: #7D7D7D;
+    --color-blue-100: #006bb3;
+    --color-red-100: #E91B1B;
+}
+
+body {
+    background-color: var(--color-white-100);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.625rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+/* **************************************************************************************************** */
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6.75rem;
+    background-color: #E91B1B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--color-white-100);
+    z-index: 99;
+}
+
+.logo {
+    margin-left: 10%;
+}
+
+.navigation {
+    margin-right: 10%;
+}
+
+.btn {
+    background-color: var(--color-red-100);
+    color: var(--color-white-100);
+    cursor: pointer;
+    border: none;
+    font-size: 2.2rem;
+}
+
+.close {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    top: 6.75rem;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-red-100);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1.5rem;
+    display: none;
+    z-index: 5;
+}
+
+nav ul li {
+    margin-bottom: 1.5rem;
+    list-style: none;
+}
+
+nav ul li:hover {
+    transform: scale(1.3);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-white-100);
+    font-size: 1.5rem;
+}
+
+#kontakt-btn {
+    background-color: var(--color-white-100);
+    color: var(--color-red-100);
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5rem;
+}
+
+/* **************************************************************************************************** */
+/* Footer */
+footer {
+    background-color: black;
+    color: var(--color-white-100);
+    padding-top: 2rem;
+}
+
+.footer-part {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+#follow {
+    display: flex;
+    flex-direction: column;
+}
+
+#kontakt a {
+    color: var(--color-white-100);
+}
+
+#follow a {
+    color: var(--color-white-100);
+}
+
+.copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid var(--color-white-100);
+    padding: 1rem 0;
+}
+
+.copyright p {
+    font-size: 1rem;
+}
+
+/* **************************************************************************************************** */
+/* Hero-image 
+.hero-image {
+    height: 12rem;
+    background-image: url("../img/background2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 0 2.5rem 2.5rem;
+    margin-top: 6.75rem;
+}*/
+
+.hero-image img{
+    width: 100%;
+    object-fit: fill;
+    margin-top: 6.75rem;
+}
+
+
+/* **************************************************************************************************** */
+/* Main Index*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.title {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+.gunpla-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    background-color: black;
+    color: var(--color-white-100);
+    padding: 1.5rem 3rem;
+    border-radius: 3.125rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.formatintro {
+    background-color: var(--color-blue-100);
+    color: var(--color-white-100);
+    padding: 1.5rem 3rem;
+}
+
+.formaticon img {
+    margin: 1rem 1rem 3rem 1rem;
+    max-width: 20rem;
+}
+
+.rg-left {
+    display: none;
+}
+
+/* Main Products*/
+.small h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.product .formaticon img {
+    max-width: 10rem;
+    margin-bottom: 1rem;
+}
+
+.product a {
+    color: black;
+}
+
+.product-img picture img {
+    width: 90%;
+    max-width: 50rem;
+    margin-bottom: 1.5rem;
+    border-radius: 2rem;
+    border: 10px solid var(--color-blue-100);
+    transition: 0.5s;
+}
+
+.product-img img:hover {
+    transform: scale(1.1);
+}
+
+/* Main Product1-3*/
+.slides {
+    margin-bottom: 5rem;
+}
+
+.mySlides img {
+    max-width: 100%;
+}
+
+.productinfo,
+.detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction,
+.detail {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+}
+
+.introduction ul {
+    list-style-position: inside;
+}
+
+.introduction li {
+    margin-top: 0.7rem;
+    font-size: 1.25rem;
+}
+
+.detail h2 {
+    margin-bottom: 2rem;
+}
+
+.detail span {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid var(--color-gray-200);
+}
+
+.video {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.video video {
+    width: 80%;
+    max-width: 450px;
+}
+
+/* Main About*/
+.about {
+    background-color: var(--color-blue-100);
+    color: var(--color-white-100);
+    padding: 1.5rem 3rem;
+    margin-bottom: 3rem;
+}
+
+.biglogo {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.biglogo img {
+    max-width: 90%;
+}
+
+.developer {
+    background-color: var(--color-gray-100);
+    padding: 1.5rem 3rem;
+    margin-bottom: 3rem;
+    border-radius: 2rem;
+}
+
+.developer a{
+    color: var(--color-red-100);
+}
+
+/* **************************************************************************************************** */
+@media all and (min-width: 801px) {
+    nav ul li a {
+        font-size: 1.7rem;
+    }
+
+    /*.hero-image {
+        height: 16rem;
+    }*/
+
+    .intro {
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }
+
+    .gunpla-intro {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .formatintro {
+        width: 50%;
+        border-radius: 0 3rem 3rem 0;
+        padding: 3rem 5rem;
+    }
+
+    .right {
+        border-radius: 3rem 0 0 3rem;
+    }
+
+    .formaticon {
+        width: 50vw;
+        text-align: center;
+    }
+
+    .formaticon img {
+        margin: 0;
+    }
+
+    .rg-left {
+        display: block;
+    }
+
+    .rg-right {
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .display-row {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    .display-row p {
+        margin-right: 1rem;
+    }
+
+    /* Main Product1-3*/
+    .slides {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .productinfo {
+        width: 80%;
+    }
+
+    .detail span {
+        font-size: 1.25rem;
+    }
+
+    /* Main About*/
+    .gunkit{
+        display: flex;
+        margin-bottom: 4rem;
+    }
+
+    .about{
+        width: 62.5%;
+        margin: 0;
+        padding: 3rem 5rem;
+    }
+
+    .biglogo{
+        width: 37.5%;
+        display: flex;
+        align-items: center;
+    }
+
+    .biglogo img{
+        margin: auto;
+    }
+
+    .developer{
+        width: 60%;
+    }
+    
+}
+
+/* **************************************************************************************************** */
+@media all and (min-width: 1521px) {
+    .btn {
+        display: none;
+    }
+
+    nav {
+        top: 0;
+        left: 25%;
+        width: 75%;
+        height: 6.75rem;
+        display: flex;
+        float: left;
+        border-bottom: 3px solid var(--color-white-100);
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-right: 3rem;
+    }
+
+    nav ul li:hover {
+        transform: scale(1.2);
+    }
+
+    nav ul li a {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    #kontakt-btn {
+        margin-left: 9rem;
+    }
+
+    #underline {
+        border-bottom: 5px solid var(--color-white-100);
+        transform: scale(1.1);
+    }
+
+    /*.hero-image {
+        height: 20rem;
+    }*/
+
+    .intro {
+        width: 50%;
+    }
+
+    /* Main Products*/
+    .products {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .product {
+        max-width: 30%;
+    }
+
+    .product .formaticon {
+        max-width: 100%;
+        height: 9rem;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-img picture img {
+        max-width: 30rem;
+        margin-bottom: 1.5rem;
+        border-radius: 2rem;
+        border: 10px solid var(--color-blue-100);
+    }
+
+
+}
