@@ -61,4 +61,19 @@ public class HomeController : Controller
         var gunpla = JsonSerializer.Deserialize<List<GunplaModel>>(jsonStr);
         return View(gunpla);
     }
+
+    public IActionResult Product1()
+    {
+        return View();
+    }
+
+    public IActionResult Product2()
+    {
+        return View();
+    }
+
+    public IActionResult Product3()
+    {
+        return View();
+    }
 }

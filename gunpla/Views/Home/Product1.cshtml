@@ -1,0 +1,145 @@
+@{
+    ViewData["title"] = "Produkt 1";
+    Layout = "_Layout2";
+}
+
+<div class="title small">
+    <h1>HG Jupitive Gundam 1/144</h1>
+</div>
+
+<div class="display-row">
+    <div class="slides">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <a href="~/img/jupitive.jpg" data-lightbox="Jupitive" data-title="Jupitive Gundam">
+                    <picture>
+                        <source srcset="~/img/jupitive.webp" type="image/webp">
+                        <img src="~/img/jupitive.jpg" alt="Bild om gundam Juptiive">
+                    </picture>
+                </a>
+                <div class="text">Jupitive Gundam</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <a href="~/img/jupitive1.jpg" data-lightbox="Jupitive" data-title="Jupitive Gundam">
+                    <picture>
+                        <source srcset="~/img/jupitive1.webp" type="image/webp">
+                        <img src="~/img/jupitive1.jpg" alt="Bild om gundam Juptiive">
+                    </picture>
+                </a>
+                <div class="text">Jupitive Gundam</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <a href="~/img/jupitive2.jpg" data-lightbox="Jupitive" data-title="Jupitive Gundam">
+                    <picture>
+                        <source srcset="~/img/jupitive2.webp" type="image/webp">
+                        <img src="~/img/jupitive2.jpg" alt="Bild om gundam Juptiive">
+                    </picture>
+                </a>
+                <div class="text">Jupitive Gundam</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <a href="~/img/jupitive3.jpg" data-lightbox="Jupitive" data-title="Jupitive Gundam">
+                    <picture>
+                        <source srcset="~/img/jupitive3.webp" type="image/webp">
+                        <img src="~/img/jupitive3.jpg" alt="Bild om gundam Juptiive">
+                    </picture>
+                </a>
+                <div class="text">Jupitive Gundam</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <a href="~/img/jupitive4.jpg" data-lightbox="Jupitive" data-title="Jupitive Gundam">
+                    <picture>
+                        <source srcset="~/img/jupitive4.webp" type="image/webp">
+                        <img src="~/img/jupitive4.jpg" alt="Bild om gundam Juptiive">
+                    </picture>
+                </a>
+                <div class="text">Jupitive Gundam</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <a href="~/img/jupitive5.jpg" data-lightbox="Jupitive" data-title="Jupitive Gundam">
+                    <picture>
+                        <source srcset="~/img/jupitive5.webp" type="image/webp">
+                        <img src="~/img/jupitive5.jpg" alt="Bild om gundam Juptiive">
+                    </picture>
+                </a>
+                <div class="text">Jupitive Gundam</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+    </div>
+
+    <div class="productinfo">
+        <div class="introduction">
+            <p>
+                Här är ett kit med hjältens Core Gundam från "Gundam Build Divers Re: RISE," i ett vitt
+                färgschema! Den bär sin ryggsäck på armen, som kan användas som ett vapen eller en sköld;
+                dessutom har pansarenheten omvandlats till två versioner: normala och höghastighetsformer. En
+                beam gatling pistol finns också. Få din idag!
+            </p>
+            <br>
+            <p>[Inkluderar]:</p>
+            <ul>
+                <li>Balkgevär</li>
+                <li>Balksabel (x2)</li>
+                <li>Effektdelar (x4)</li>
+                <li>Bas</li>
+            </ul>
+        </div>
+
+        <div class="detail">
+            <h2>Detaljer</h2>
+
+            <span>Kod: BANS59002</span>
+
+            <span>JAN-kod: 4573102590022</span>
+
+            <span>Releasedatum: 2020/01/09</span>
+
+            <span>Kategori: Gundam</span>
+
+            <span>Serie: Gundam Build Fighters / Gundam Build Divers</span>
+
+            <span>Artikeltyp: Högklassiga kit</span>
+
+            <span>Tillverkare: Bandai</span>
+
+            <span>Artikelstorlek/vikt: 29.5 x 18.8 x 8.3 cm / 360g</span>
+        </div>
+
+        <div class="video">
+            <video controls loop muted playsinline>
+                <source src="~/img/gundam.webm" type="video/webm">
+                <source src="~/img/gundam.mp4" type='video/mp4'>
+                Din webbläsare stöder ej video-formatet.
+            </video>
+        </div>
+    </div>
+</div>
