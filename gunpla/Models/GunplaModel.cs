@@ -3,6 +3,11 @@ namespace gunpla.Models;
 
 public class GunplaModel
 {
+    public GunplaModel()
+    {
+        IsGift = false;
+        Tools = new List<string>();
+    }
     // Properties
 
     [Required(ErrorMessage = "Ange modelens nummer")]

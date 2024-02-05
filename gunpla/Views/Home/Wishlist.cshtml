@@ -7,8 +7,12 @@
     <h1>Wishlist</h1>
 </div>
 
-<ul>
-    @foreach(var gunpla in Model) {
-        <li>@gunpla.Code - @gunpla.Name - @gunpla.Type - @gunpla.Serie (Är det en present?: @gunpla.IsGift) | Behöver verktyg:  @(gunpla.Tools != null ? string.Join(", ", gunpla.Tools) : "Inga verktyg")</li>
-    }
-</ul>
+<div class="wishlist">
+    <ul>
+        @foreach (var gunpla in Model)
+        {
+            <li>@gunpla.Code - @gunpla.Name - @gunpla.Type - @gunpla.Serie (Är det en present?: @gunpla.IsGift) | Behöver
+                verktyg: @(gunpla.Tools != null ? string.Join(", ", gunpla.Tools) : "Inga verktyg")</li>
+        }
+    </ul>
+</div>

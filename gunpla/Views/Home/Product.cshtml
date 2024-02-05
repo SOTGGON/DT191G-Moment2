@@ -72,47 +72,47 @@
 
 <h2>Här kan man lägga model till wishlist:</h2>
 
-<form method="post">
-    <div asp-validation-summary="ModelOnly"></div>
-    <label asp-for="Code"></label>
-    <input asp-for="Code" type="text">
-    <span asp-validation-for="Code"></span>
-    <br>
-    <label asp-for="Name"></label>
-    <input asp-for="Name" type="text">
-    <span asp-validation-for="Name"></span>
-    <br>
-    <label asp-for="Type"></label>
-    <select asp-for="Type" class="form-control">
-        <option value="">Choose Type</option>
-        <option value="HG">High Grade</option>
-        <option value="RG">Real Grade</option>
-        <option value="EG">Entry Grade</option>
-    </select>
-    <span asp-validation-for="Type"></span>
-    <br>
-    <label asp-for="Serie"></label>
-    <input asp-for="Serie" type="text">
-    <span asp-validation-for="Serie"></span>
-    <br>
-    <label asp-for="Tools"></label>
-    <div>
-        <input type="checkbox" name="Tools" value="Knife" />
-        <label>Modeling Knife</label><br>
-        <input type="checkbox" name="Tools" value="Glue" />
-        <label>Glue</label><br>
-        <input type="checkbox" name="Tools" value="Sandpaper" />
-        <label>Sandpaper</label><br>
-        <input type="checkbox" name="Tools" value="Brush" />
-        <label>Modeling Brush</label><br>
-        <input type="checkbox" name="Tools" value="Pliers" />
-        <label>Pliers</label><br>
-    </div>
-    <span asp-validation-for="Tools"></span>
-    <br>
-    <label asp-for="IsGift"></label>
-    <input asp-for="IsGift" type="checkbox">
-    <span asp-validation-for="IsGift"></span>
-    <br>
-    <input type="submit" value="Lägg till model">
-</form>
+<div class="wishlistinput">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly"></div>
+        <label asp-for="Code"></label>
+        <input asp-for="Code" type="text">
+        <span asp-validation-for="Code"></span>
+        <br>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" type="text">
+        <span asp-validation-for="Name"></span>
+        <br>
+        <label asp-for="Type"></label>
+        <select asp-for="Type" class="form-control">
+            <option value="">Choose Type</option>
+            <option value="HG">High Grade</option>
+            <option value="RG">Real Grade</option>
+            <option value="EG">Entry Grade</option>
+        </select>
+        <span asp-validation-for="Type"></span>
+        <br>
+        <label asp-for="Serie"></label>
+        <input asp-for="Serie" type="text">
+        <span asp-validation-for="Serie"></span>
+        <br>
+        <label asp-for="Tools"></label>
+        <div>
+            <input type="checkbox" name="Tools" value="Knife" />
+            <label>Modeling Knife</label><br>
+            <input type="checkbox" name="Tools" value="Glue" />
+            <label>Glue</label><br>
+            <input type="checkbox" name="Tools" value="Sandpaper" />
+            <label>Sandpaper</label><br>
+            <input type="checkbox" name="Tools" value="Brush" />
+            <label>Modeling Brush</label><br>
+            <input type="checkbox" name="Tools" value="Pliers" />
+            <label>Pliers</label><br>
+        </div>
+        <br>
+        <label asp-for="IsGift"></label>
+        <input asp-for="IsGift" type="checkbox">
+        <br>
+        <input type="submit" value="Lägg till model">
+    </form>
+</div>
